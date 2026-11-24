@@ -11,6 +11,8 @@ services:
       - jenkins
   jenkins-blueocean:
     image: myjenkins-blueocean:2.555.2-1
+    group_add:
+      - "988"
     restart: on-failure
     # environment:
     #   DOCKER_HOST: tcp://docker:2376
