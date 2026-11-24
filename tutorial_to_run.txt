@@ -42,3 +42,5 @@ docker run --name jenkins-blueocean --restart=on-failure --detach ^
   --volume jenkins-docker-certs:/certs/client:ro ^
   --publish 8080:8080 --publish 50000:50000 myjenkins-blueocean:2.555.2-1
 Proceed to the Setup wizard.
+
+sed -i 's|http://archive.ubuntu.com/ubuntu/|http://in.archive.ubuntu.com/ubuntu/|g' /etc/apt/sources.list.d/ubuntu.sources
